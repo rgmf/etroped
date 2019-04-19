@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Copyright (c) 2017-2019 Román Ginés Martínez Ferrández (rgmf@riseup.net)
+
+    This file is part of Etroped (http://etroped.rgmf.es).
+
+    Etroped is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    Etroped is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with Foobar.  If not, see <https://www.gnu.org/licenses/>.
+-->
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto">
+
+
+        <ListPreference
+            android:key="@string/pref_units_key"
+            android:defaultValue="@string/pref_units_metric"
+            android:entries="@array/pref_units_options"
+            android:entryValues="@array/pref_units_values"
+            android:title="@string/pref_units_label" />
+
+        <ListPreference
+            android:key="@string/pref_default_sport_key"
+            android:title="@string/pref_default_sport_label"
+            android:defaultValue="@string/pref_bike"
+            android:entries="@array/pref_default_sports_options"
+            android:entryValues="@array/pref_default_sports_values" />
+
+        <es.rgmf.etroped.dialogs.NumberPickerPreference
+            android:key="accuracy"
+            android:title="@string/pref_accuracy_title"
+            android:summary="Summary"
+            android:defaultValue="20"
+            android:persistent="true"
+            custom:minValue="1"
+            custom:maxValue="50"
+            android:dialogMessage="@string/pref_accuracy_dialog_message"
+            android:dialogLayout="@layout/dialog_number_picker_preference"
+            android:positiveButtonText="@android:string/ok"
+            android:negativeButtonText="@android:string/cancel" />
+
+    <PreferenceCategory
+        android:key="@string/pref_category_pebble_key"
+        android:title="@string/pref_category_pebble_label">
+
+        <SwitchPreferenceCompat
+            android:key="@string/pref_pebble_key"
+            android:title="@string/pref_pebble_label"
+            android:summary="@string/pref_pebble_summary" />
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Copyright (c) 2017-2019 Román Ginés Martínez Ferrández (rgmf@riseup.net)
+
+    This file is part of Etroped (http://etroped.rgmf.es).
+
+    Etroped is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    Etroped is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with Foobar.  If not, see <https://www.gnu.org/licenses/>.
+-->
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item android:title="@string/activities_menu_title">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_new_activity"
+                    android:checkable="true"
+                    android:icon="@drawable/ic_radio_button_checked_black_24dp"
+                    android:title="@string/action_new_activity" />
+                <item
+                    android:id="@+id/nav_activities_list"
+                    android:checkable="true"
+                    android:icon="@drawable/ic_list_black_24dp"
+                    android:title="@string/action_activities_list" />
+                <item
+                    android:id="@+id/nav_stats"
+                    android:checkable="true"
+                    android:icon="@drawable/ic_pie_chart_white_48dp"
+                    android:title="@string/action_stats" />
+            </group>
+        </menu>
+    </item>
+
+    <item android:title="@string/menu">
+        <menu>
+            <item
+                android:id="@+id/nav_settings"
+                android:icon="@drawable/ic_settings_black_24dp"
+                android:title="@string/action_settings" />
+
+            <item
+                android:id="@+id/nav_about"
+                android:icon="@drawable/ic_info_black_24dp"
+                android:title="@string/action_about" />
+        </menu>
+    </item>
+
+</menu>

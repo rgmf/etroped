@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Copyright (c) 2017-2019 Román Ginés Martínez Ferrández (rgmf@riseup.net)
+
+    This file is part of Etroped (http://etroped.rgmf.es).
+
+    Etroped is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    Etroped is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with Foobar.  If not, see <https://www.gnu.org/licenses/>.
+-->
+
+<resources>
+
+    <string name="tracker_activity_label">Grabar actividad</string>
+    <string name="action_stats">Estadísticas</string>
+    <string name="activity_edit">Editar actividad</string>
+    <string name="activity_track">Track</string>
+    <string name="activity_gps_status">Estado del GPS</string>
+
+    <string name="menu">Menú</string>
+
+    <string name="loading">Cargando...</string>
+
+    <!-- - - - - - - - - - - - - - - - - - -->
+    <!-- Formats                           -->
+    <!-- - - - - - - - - - - - - - - - - - -->
+    <string name="workouts_unit">%1d salidas</string>
+
+    <!-- - - - - - - - - - - - - - - - - - -->
+    <!-- Actions activities menu           -->
+    <!-- - - - - - - - - - - - - - - - - - -->
+    <string name="action_settings">Configuración</string>
+    <string name="action_about">Acerca de</string>
+    <string name="action_remove">Eliminar</string>
+    <string name="action_edit">Editar</string>
+    <string name="action_save">Guardar</string>
+
+    <!-- - - - - - - - - - - - - - - - - - -->
+    <!-- Days                              -->
+    <!-- - - - - - - - - - - - - - - - - - -->
+    <string name="today">Hoy</string>
+    <string name="yesterday">Ayer</string>
+
+    <!-- - - - - - - - - - - - - - - - - - -->
+    <!-- Hints and hints for entry text    -->
+    <!-- - - - - - - - - - - - - - - - - - -->
+    <string name="hint_activity_name">Ponle un título a tu actividad</string>
+    <string name="hint_activity_comment">Añade una descripción</string>
+    <string name="hint_distance_km">Distancia (km)</string>
+    <string name="hint_distance_mi">Distancia (mi)</string>
+
+    <!-- - - - - - - - - - - - - - - - - - -->
+    <!-- Names for labels                  -->
+    <!-- - - - - - - - - - - - - - - - - - -->
+    <string name="time_caption_label">TIEMPO</string>
+    <string name="elapsed_time_caption_label">DURACIÓN</string>
+    <string name="speed_caption_label">SPEED</string>
+    <string name="avg_speed_caption_label">VEL. MEDIA</string>
+    <string name="max_speed_caption_label">VEL. MÁXIMA</string>
+    <string name="max_altitude_caption_label">ALT. MÁXIMA</string>
+    <string name="elevation_gain_caption_label">DESNIVEL POSITIVO</string>
+    <string name="elevation_lost_caption_label">DESNIVEL NEGATIVO</string>
+    <string name="distance_caption_label">DISTANCIA</string>
+    <string name="elevation_caption_label">DESNIVEL</string>
+    <string name="pace_caption_label">RITMO</string>
+    <string name="all_times_stats_caption">TODOS LOS TIEMPOS</string>
+
+    <string name="avg_speed_complete_label">Vel. media</string>
+    <string name="max_speed_complete_label">Vel. máxima</string>
+    <string name="pace_complete_label">Ritmo</string>
+
+    <string name="satellites_label">Satélites</string>
+    <string name="accuracy_label">Precisión</string>
+    <string name="gps_altitude_label">Altitud GPS</string>
+    <string name="pressure_label">Presión atmosférica</string>
+    <string name="barometer_altitude_label">Altitud barómetro</string>
+    <string name="city_label">Ciudad</string>
+    <string name="country_label">País</string>
+
+    <string name="this_week">Esta semana</string>
+
+    <string name="date_separator">" - "</string>
+
+    <!-- - - - - - - - - - - - - - - - - - -->
+    <!-- Buttons labels                    -->
+    <!-- - - - - - - - - - - - - - - - - - -->
+    <string name="button_cancel">Cancelar</string>
+    <string name="button_ok">Aceptar</string>
+    <string name="button_finish">Guardar y acabar</string>
+    <string name="button_resume">Reanudar</string>
+
+    <!-- - - - - - - - - - - - - - - - - - -->
+    <!-- Used by preferences               -->
+    <!-- - - - - - - - - - - - - - - - - - -->
+    <string name="pref_units_label">Unidades</string>
+    <string name="pref_units_metric_label">Sistema métrico</string>
+    <string name="pref_units_imperial_label">Sistema imperial</string>
+
+    <string name="pref_default_sport_label">Deporte por defecto</string>
+
+    <string name="pref_accuracy_title">Precisión</string>
+    <string name="pref_accuracy_dialog_message">
+        Precisión en metros del GPS para grabar un punto
+    </string>
+
+    <string name="pref_category_general_label">General</string>
+    <string name="pref_category_pebble_label">Reloj Pebble</string>
+    <string name="pref_pebble_label">Pebble</string>
+    <string name="pref_pebble_summary">
+        Marca esta opción si quieres ver la información de las actividades en tu reloj Pebble
+    </string>
+
+    <!-- - - - - - - - - - - - - - - - - - -->
+    <!-- Used in the side menu             -->
+    <!-- - - - - - - - - - - - - - - - - - -->
+    <string name="action_new_activity">Registrar actividad</string>
+    <string name="action_activities_list">Últimas Actividades</string>
+    <string name="activities_menu_title">Actividades</string>
+
+    <!-- - - - - - - - - - - - - - - - - - -->
+    <!-- Toast messeges                    -->
+    <!-- - - - - - - - - - - - - - - - - - -->
+    <string name="toast_location_permission_needed">
+        La localización es necesaria para grabar recorridos
+    </string>
+    <string name="toast_activity_updated">
+        Tus cambios se han guardado
+    </string>
+    <string name="toast_activity_not_updated">
+        Tus cambios no se han guardado
+    </string>
+    <string name="permission_storage_explanation">
+        Sin acceso al almacenamiento puedes tener problemas al cargar mapas
+    </string>
+    <string name="error_pressure_network">
+        Error en la red al obtener información del barómetro
+    </string>
+    <string name="toast_date_invalid">
+        En esa fecha no hay actividades
+    </string>
+
+    <!-- - - - - - - - - - - - - - - - - - -->
+    <!-- Alert messages                    -->
+    <!-- - - - - - - - - - - - - - - - - - -->
+    <string name="alert_gps_disabled_title">
+        GPS desactivado
+    </string>
+    <string name="alert_gps_enabled_title">
+        GPS activado
+    </string>
+    <string name="alert_gps_waiting_title">
+        Esperando señal GPS...
+    </string>
+    <string name="alert_gps_enable_location_message">
+        Los servicios de localización están deshabilitados. ¿Deseas habilitarlos para registrar
+        actividades?
+    </string>
+    <string name="select_sport_to_record">
+        Selecciona el deporte
+    </string>
+    <string name="alert_ask_for_finish_activity">
+        ¿Quieres terminar la actividad y guardarla?
+    </string>
+    <string name="alert_ask_for_remove_activity">
+        ¿Quieres eliminar la actividad?
+    </string>
+    <string name="alert_internet_enable_for_pressure_message">
+        Se puede usar el barómetro para calcular la altitud de manera más precisa que con GPS pero
+        se necesita conexión a Internet para obtener la presión a nivel del mar. ¿Deseas habilitar
+        Internet o la red móvil? En otro caso se usará la altitud GPS.
+    </string>
+
+    <!-- - - - - - - - - - - - - - - - - - -->
+    <!-- Notification messages             -->
+    <!-- - - - - - - - - - - - - - - - - - -->
+    <string name="gps_service_message">
+        Grabando una actividad
+    </string>
+
+    <!-- - - - - - - - - - - - - - - - - - -->
+    <!-- Error messages                    -->
+    <!-- - - - - - - - - - - - - - - - - - -->
+    <string name="err_unknown_uri">
+        Uri "%1$s" desconocida
+    </string>
+    <string name="err_fail_insert_uri">
+        Error al insertar una fila dentro de %1$s
+    </string>
+    <string name="err_fail_inserting_data">
+        Error al insertar una fila dentro de la base de datos
+    </string>
+    <string name="err_no_sport_updated">
+        El deporte no ha sido cambiado
+    </string>
+
+    <!-- - - - - - - - - - - - - - - - - - -->
+    <!-- Other messages                    -->
+    <!-- - - - - - - - - - - - - - - - - - -->
+    <string name="gps_signal_off">Sin señal GPS</string>
+    <string name="enable">Activar</string>
+    <string name="empty_activities">
+        No tienes actividades. Para crear una nueva actividad haz click en el botón de abajo.
+    </string>
+    <string name="distance">Distancia</string>
+    <string name="week_caption">Semana</string>
+
+    <!-- - - - - - - - - - - - - - - - - - -->
+    <!-- Types of sports names             -->
+    <!-- - - - - - - - - - - - - - - - - - -->
+    <string name="sport_bike">Ciclismo</string>
+    <string name="sport_bike_road">Ciclismo</string>
+    <string name="sport_bike_mtb">MTB</string>
+    <string name="sport_running">Carrera</string>
+    <string name="sport_walking">Paseo</string>
+
+    <!-- - - - - - - - - - - - - - - - - - -->
+    <!-- Stats texts                       -->
+    <!-- - - - - - - - - - - - - - - - - - -->
+    <string name="title_activity_stats">Estadísticas</string>
+    <string name="tab_text_1">Resumen</string>
+    <string name="tab_text_2">Meses</string>
+    <string name="tab_text_3">Años</string>
+
+</resources>

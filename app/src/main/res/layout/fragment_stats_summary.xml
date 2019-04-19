@@ -1,0 +1,376 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Copyright (c) 2017-2019 Román Ginés Martínez Ferrández (rgmf@riseup.net)
+
+    This file is part of Etroped (http://etroped.rgmf.es).
+
+    Etroped is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    Etroped is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with Foobar.  If not, see <https://www.gnu.org/licenses/>.
+-->
+
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/scroll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.constraint.ConstraintLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".fragment.StatsSummaryFragment">
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guideline2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.33" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guideline3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.66" />
+
+        <TextView
+            android:id="@+id/tv_caption"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:text="@string/all_times_stats_caption"
+            android:textAppearance="@style/MyTextAppearance.Caption.Small"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!-- Bike -->
+        <ImageView
+            android:id="@+id/iv_bike"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:tint="@color/color_bike_icon"
+            android:layout_marginTop="24dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:contentDescription="@string/sport_bike"
+            android:src="@drawable/ic_directions_bike_black_48dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_caption" />
+
+        <TextView
+            android:id="@+id/tv_bike_workouts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:text="@string/sport_bike"
+            android:textAppearance="@style/MyTextAppearance.Medium"
+            app:layout_constraintBottom_toBottomOf="@+id/iv_bike"
+            app:layout_constraintStart_toEndOf="@+id/iv_bike"
+            app:layout_constraintTop_toTopOf="@+id/iv_bike" />
+
+        <TextView
+            android:id="@+id/tv_bike_distance_tag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginLeft="24dp"
+            android:text="@string/distance_caption_label"
+            android:textAppearance="@style/MyTextAppearance.Small"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_bike_distance" />
+
+        <TextView
+            android:id="@+id/tv_bike_distance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="0dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/distance_example"
+            android:textAppearance="@style/MyTextAppearance.Medium"
+            app:layout_constraintStart_toStartOf="@+id/tv_bike_distance_tag"
+            app:layout_constraintTop_toBottomOf="@+id/iv_bike" />
+
+        <TextView
+            android:id="@+id/tv_bike_time_tag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginBottom="0dp"
+            android:text="@string/time_caption_label"
+            app:layout_constraintBottom_toBottomOf="@id/tv_bike_distance_tag"
+            android:textAppearance="@style/MyTextAppearance.Small"
+            app:layout_constraintStart_toStartOf="@+id/guideline2" />
+
+        <TextView
+            android:id="@+id/tv_bike_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="0dp"
+            android:layout_marginLeft="8dp"
+            android:text="@string/time_example"
+            android:textAppearance="@style/MyTextAppearance.Medium"
+            app:layout_constraintBottom_toTopOf="@+id/tv_bike_time_tag"
+            app:layout_constraintStart_toStartOf="@+id/tv_bike_time_tag" />
+
+        <TextView
+            android:id="@+id/tv_bike_max_altitude_tag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginBottom="0dp"
+            android:text="@string/max_altitude_caption_label"
+            app:layout_constraintBottom_toBottomOf="@id/tv_bike_time_tag"
+            android:textAppearance="@style/MyTextAppearance.Small"
+            app:layout_constraintStart_toStartOf="@+id/guideline3" />
+
+        <TextView
+            android:id="@+id/tv_bike_max_altitude"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="0dp"
+            android:layout_marginLeft="8dp"
+            android:text="@string/elevation_example"
+            android:textAppearance="@style/MyTextAppearance.Medium"
+            app:layout_constraintBottom_toTopOf="@+id/tv_bike_max_altitude_tag"
+            app:layout_constraintStart_toStartOf="@+id/tv_bike_max_altitude_tag" />
+
+        <!-- Running -->
+        <ImageView
+            android:id="@+id/iv_running"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:tint="@color/color_running_icon"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="48dp"
+            android:contentDescription="@string/sport_bike"
+            android:src="@drawable/ic_directions_run_black_48dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_bike_distance_tag" />
+
+        <TextView
+            android:id="@+id/tv_running_workouts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:text="@string/sport_running"
+            android:textAppearance="@style/MyTextAppearance.Medium"
+            app:layout_constraintBottom_toBottomOf="@+id/iv_running"
+            app:layout_constraintStart_toEndOf="@+id/iv_running"
+            app:layout_constraintTop_toTopOf="@+id/iv_running" />
+
+        <TextView
+            android:id="@+id/tv_running_distance_tag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginLeft="24dp"
+            android:text="@string/distance_caption_label"
+            android:textAppearance="@style/MyTextAppearance.Small"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_running_distance" />
+
+        <TextView
+            android:id="@+id/tv_running_distance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="0dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/distance_example"
+            android:textAppearance="@style/MyTextAppearance.Medium"
+            app:layout_constraintStart_toStartOf="@+id/tv_running_distance_tag"
+            app:layout_constraintTop_toBottomOf="@+id/iv_running" />
+
+        <TextView
+            android:id="@+id/tv_running_time_tag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginBottom="0dp"
+            android:text="@string/time_caption_label"
+            app:layout_constraintBottom_toBottomOf="@id/tv_running_distance_tag"
+            android:textAppearance="@style/MyTextAppearance.Small"
+            app:layout_constraintStart_toStartOf="@+id/guideline2" />
+
+        <TextView
+            android:id="@+id/tv_running_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="0dp"
+            android:layout_marginLeft="8dp"
+            android:text="@string/time_example"
+            android:textAppearance="@style/MyTextAppearance.Medium"
+            app:layout_constraintBottom_toTopOf="@+id/tv_running_time_tag"
+            app:layout_constraintStart_toStartOf="@+id/tv_running_time_tag" />
+
+        <TextView
+            android:id="@+id/tv_running_max_altitude_tag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginBottom="0dp"
+            android:text="@string/max_altitude_caption_label"
+            app:layout_constraintBottom_toBottomOf="@id/tv_running_time_tag"
+            android:textAppearance="@style/MyTextAppearance.Small"
+            app:layout_constraintStart_toStartOf="@+id/guideline3" />
+
+        <TextView
+            android:id="@+id/tv_running_max_altitude"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="0dp"
+            android:layout_marginLeft="8dp"
+            android:text="@string/elevation_example"
+            android:textAppearance="@style/MyTextAppearance.Medium"
+            app:layout_constraintBottom_toTopOf="@+id/tv_running_max_altitude_tag"
+            app:layout_constraintStart_toStartOf="@+id/tv_running_max_altitude_tag" />
+
+        <!-- Walking -->
+        <ImageView
+            android:id="@+id/iv_walking"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:tint="@color/color_walking_icon"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="48dp"
+            android:contentDescription="@string/sport_walking"
+            android:src="@drawable/ic_directions_walk_black_48dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_running_distance_tag" />
+
+        <TextView
+            android:id="@+id/tv_walking_workouts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:text="@string/sport_walking"
+            android:textAppearance="@style/MyTextAppearance.Medium"
+            app:layout_constraintBottom_toBottomOf="@+id/iv_walking"
+            app:layout_constraintStart_toEndOf="@+id/iv_walking"
+            app:layout_constraintTop_toTopOf="@+id/iv_walking" />
+
+        <TextView
+            android:id="@+id/tv_walking_distance_tag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginLeft="24dp"
+            android:text="@string/distance_caption_label"
+            android:textAppearance="@style/MyTextAppearance.Small"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_walking_distance" />
+
+        <TextView
+            android:id="@+id/tv_walking_distance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="0dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/distance_example"
+            android:textAppearance="@style/MyTextAppearance.Medium"
+            app:layout_constraintStart_toStartOf="@+id/tv_walking_distance_tag"
+            app:layout_constraintTop_toBottomOf="@+id/iv_walking" />
+
+        <TextView
+            android:id="@+id/tv_walking_time_tag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginBottom="0dp"
+            android:text="@string/time_caption_label"
+            app:layout_constraintBottom_toBottomOf="@id/tv_walking_distance_tag"
+            android:textAppearance="@style/MyTextAppearance.Small"
+            app:layout_constraintStart_toStartOf="@+id/guideline2" />
+
+        <TextView
+            android:id="@+id/tv_walking_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="0dp"
+            android:layout_marginLeft="8dp"
+            android:text="@string/time_example"
+            android:textAppearance="@style/MyTextAppearance.Medium"
+            app:layout_constraintBottom_toTopOf="@+id/tv_walking_time_tag"
+            app:layout_constraintStart_toStartOf="@+id/tv_walking_time_tag" />
+
+        <TextView
+            android:id="@+id/tv_walking_max_altitude_tag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginBottom="0dp"
+            android:text="@string/max_altitude_caption_label"
+            app:layout_constraintBottom_toBottomOf="@id/tv_walking_time_tag"
+            android:textAppearance="@style/MyTextAppearance.Small"
+            app:layout_constraintStart_toStartOf="@+id/guideline3" />
+
+        <TextView
+            android:id="@+id/tv_walking_max_altitude"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="0dp"
+            android:layout_marginLeft="8dp"
+            android:text="@string/elevation_example"
+            android:textAppearance="@style/MyTextAppearance.Medium"
+            app:layout_constraintBottom_toTopOf="@+id/tv_walking_max_altitude_tag"
+            app:layout_constraintStart_toStartOf="@+id/tv_walking_max_altitude_tag" />
+
+        <!-- Dividers -->
+        <View
+            android:id="@+id/divider1"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            app:layout_constraintTop_toBottomOf="@+id/tv_bike_distance_tag"
+            android:layout_marginTop="16dp"
+            android:background="@color/colorDivider"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp" />
+
+        <View
+            android:id="@+id/divider2"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            app:layout_constraintTop_toBottomOf="@+id/tv_running_distance_tag"
+            android:layout_marginTop="16dp"
+            android:background="@color/colorDivider"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp" />
+
+
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.v4.widget.NestedScrollView>

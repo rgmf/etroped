@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Copyright (c) 2017-2019 Román Ginés Martínez Ferrández (rgmf@riseup.net)
+
+    This file is part of Etroped (http://etroped.rgmf.es).
+
+    Etroped is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    Etroped is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with Foobar.  If not, see <https://www.gnu.org/licenses/>.
+-->
+
+<resources>
+    <string name="app_name" translatable="false">Etroped</string>
+
+    <string name="navigation_drawer_open">Open</string>
+    <string name="navigation_drawer_close">Close</string>
+
+    <string name="menu">Menu</string>
+
+    <string name="tracker_activity_label">Record activity</string>
+    <string name="action_stats">Stats</string>
+    <string name="activity_edit">Edit activity</string>
+    <string name="activity_track">Activity track</string>
+    <string name="activity_gps_status">GPS Status</string>
+
+    <string name="created_by">Created by</string>
+    <string name="copyright">Copyright \u00A9 2017 - 2019 Román Ginés Martínez Ferrández</string>
+    <string name="licensed_gpl3">Licensed under GNU GPLv3</string>
+    <string name="by_roman">Created by Román Ginés Martínez Ferrández (rgmf@riseup.net)</string>
+    <string name="by_email">rgmf@riseup.net</string>
+    <string name="used_libraries">Used libraries</string>
+    <string name="material_design_icons">Material Design Icons</string>
+    <string name="by_google_material">
+        by Google, licensed under an Attribution-ShareAlike 4.0 International license
+        (https://github.com/google/material-design-icons)
+    </string>
+    <string name="mpandroidchart">MPAndroidChart</string>
+    <string name="by_mpandroidchart">
+        by Philipp Jahoda, licensed under the Apache License, Version 2.0
+        (https://github.com/PhilJay/MPAndroidChart)
+    </string>
+    <string name="osmdroid">osmdroid</string>
+    <string name="by_osmdroid">
+        by osmdroid, licensed under Apache License, Version 2.0
+        (https://github.com/osmdroid/osmdroid)
+    </string>
+
+    <string name="loading">Loading...</string>
+
+    <!-- - - - - - - - - - - - - - - - - - -->
+    <!-- Actions activities menu           -->
+    <!-- - - - - - - - - - - - - - - - - - -->
+    <string name="action_settings">Settings</string>
+    <string name="action_about">About</string>
+    <string name="action_remove">Remove</string>
+    <string name="action_edit">Edit</string>
+    <string name="action_save">Save</string>
+
+    <!-- - - - - - - - - - - - - - - - - - -->
+    <!-- Days                              -->
+    <!-- - - - - - - - - - - - - - - - - - -->
+    <string name="today">Today</string>
+    <string name="yesterday">Yesterday</string>
+
+    <!-- - - - - - - - - - - - - - - - - - -->
+    <!-- Fake names for layouts            -->
+    <!-- - - - - - - - - - - - - - - - - - -->
+    <string name="fake_activity_name">Ride by bike around a city</string>
+    <string name="fake_activity_distance">150km</string>
+    <string name="fake_activity_time">3h 4min</string>
+    <string name="fake_activity_date">20 January 2017 at 18:35</string>
+
+    <!-- - - - - - - - - - - - - - - - - - -->
+    <!-- Example strings for layouts       -->
+    <!-- - - - - - - - - - - - - - - - - - -->
+    <string name="time_example">1:24:35</string>
+    <string name="current_speed_example">32,5</string>
+    <string name="avg_speed_example">29,3</string>
+    <string name="max_speed_example">54,2</string>
+    <string name="elevation_gain_example">1040</string>
+    <string name="pace_example">4:37</string>
+    <string name="speed_unit_example">km/h</string>
+    <string name="distance_example">43,5</string>
+    <string name="distance_unit_example">km</string>
+    <string name="elevation_example">984</string>
+    <string name="elevation_unit_example">m</string>
+    <string name="pace_unit_example">min/km</string>
+    <string name="current_pace_example">5:30</string>
+    <string name="avg_speed_complete_example">29,3 km/h</string>
+
+    <string name="pace_complete_example">4:37 min/km</string>
+    <string name="max_speed_complete_example">54 km/h</string>
+
+    <string name="time_none">--:--:--</string>
+    <string name="speed_none">--</string>
+    <string name="distance_none">--</string>
+    <string name="elevation_none">--</string>
+
+    <!-- - - - - - - - - - - - - - - - - - -->
+    <!-- Formats                           -->
+    <!-- - - - - - - - - - - - - - - - - - -->
+    <string name="distance_meters_format">%1.0fm</string>
+    <string name="distance_kilometers_format">%1.2fkm</string>
+    <string name="distance_yards_format">%1.0fyd</string>
+    <string name="distance_miles_format">%1.2fmi</string>
+    <string name="distance_no_unit">%1.2f</string>
+
+    <string name="distance_unit_meters">m</string>
+    <string name="distance_unit_yards">yd</string>
+    <string name="distance_unit_km">km</string>
+    <string name="distance_unit_mi">mi</string>
+
+    <string name="hours_minutes_seconds_format">%1$2dh %2$2d\' %3$2d\'\'</string>
+    <string name="hours_minutes_format">%1$2dh %2$2d\'</string>
+    <string name="minutes_seconds_format">%1$2d\' %2$2d\'\'</string>
+    <string name="minutes_format">%1$2d\'</string>
+    <string name="seconds_format">%1$2d\'\'</string>
+
+    <string name="hours_minutes_seconds_format_onlive">%1$02d:%2$02d:%3$02d</string>
+    <string name="hours_minutes_v2_format">%1$2dh %2$2dmin</string>
+    <string name="minutes_v2_format">%1$2dmin</string>
+
+    <string name="time_bike_format">%1$2dh %2$2d\'</string>
+    <string name="time_walking_format">%1$02dh %2$02d\' %3$02d\'\'</string>
+
+    <string name="speed_format">%1.2f</string>
+    <string name="speed_km_h_format">%1.2fkm/h</string>
+    <string name="speed_mi_h_format">%1.2fmi/h</string>
+    <string name="speed_unit_metric">km/h</string>
+    <string name="speed_unit_imperial">mi/h</string>
+
+    <string name="altitude_format">%1d</string>
+    <string name="altitude_unit_metric">m</string>
+    <string name="altitude_unit_imperial">ft</string>
+
+    <string name="pace_format">%1$1d:%2$02d</string>
+    <string name="pace_unit_metric">min/km</string>
+    <string name="pace_unit_imperial">min/mi</string>
+
+    <string name="workouts_unit">%1d workouts</string>
+
+    <!-- - - - - - - - - - - - - - - - - - -->
+    <!-- Hints and hints for entry text    -->
+    <!-- - - - - - - - - - - - - - - - - - -->
+    <string name="hint_activity_name">Type a title to your activity</string>
+    <string name="hint_activity_comment">Add a description</string>
+    <string name="hint_distance_km">Distance (km)</string>
+    <string name="hint_distance_mi">Distance (mi)</string>
+
+    <!-- - - - - - - - - - - - - - - - - - -->
+    <!-- Names for labels                  -->
+    <!-- - - - - - - - - - - - - - - - - - -->
+    <string name="time_caption_label">TIME</string>
+    <string name="elapsed_time_caption_label">ELAPSED TIME</string>
+    <string name="speed_caption_label">SPEED</string>
+    <string name="avg_speed_caption_label">AVG. SPEED</string>
+    <string name="max_speed_caption_label">MAX. SPEED</string>
+    <string name="max_altitude_caption_label">MAX. ALTITUDE</string>
+    <string name="elevation_gain_caption_label">ELEVATION GAIN</string>
+    <string name="elevation_lost_caption_label">ELEVATION LOST</string>
+    <string name="avg_speed_label" translatable="false">avg</string>
+    <string name="distance_caption_label">DISTANCE</string>
+    <string name="elevation_caption_label">ELEVATION</string>
+    <string name="pace_caption_label">PACE</string>
+    <string name="km_caption_label" translatable="false">KM</string>
+    <string name="mi_caption_label" translatable="false">MI</string>
+    <string name="all_times_stats_caption">ALL THE TIME STATS</string>
+
+    <string name="avg_speed_complete_label">Avg. speed</string>
+    <string name="max_speed_complete_label">Max. speed</string>
+    <string name="pace_complete_label">Pace</string>
+
+    <string name="satellites_label">Satellites</string>
+    <string name="accuracy_label">Accuracy</string>
+    <string name="gps_altitude_label">GPS Altitude</string>
+    <string name="pressure_label">Atmospheric Pressure</string>
+    <string name="barometer_altitude_label">Barometer Altitude</string>
+    <string name="geoidheight_label" translatable="false">GEO ID Height</string>
+    <string name="pdop_label" translatable="false">PDOP</string>
+    <string name="vdop_label" translatable="false">VDOP</string>
+    <string name="hdop_label" translatable="false">HDOP</string>
+    <string name="city_label">City</string>
+    <string name="country_label">Country</string>
+
+    <string name="this_week">This week</string>
+
+    <string name="date_separator">" - "</string>
+
+    <!-- - - - - - - - - - - - - - - - - - -->
+    <!-- Buttons labels                    -->
+    <!-- - - - - - - - - - - - - - - - - - -->
+    <string name="button_cancel">Cancel</string>
+    <string name="button_ok">Ok</string>
+    <string name="button_finish">Finish and save</string>
+    <string name="button_resume">Resume</string>
+
+    <!-- - - - - - - - - - - - - - - - - - -->
+    <!-- Used by preferences               -->
+    <!-- - - - - - - - - - - - - - - - - - -->
+    <string name="pref_units_label">Units</string>
+    <string name="pref_units_key" translatable="false">units</string>
+    <string name="pref_units_metric_label">Metric</string>
+    <string name="pref_units_imperial_label">Imperial</string>
+    <string name="pref_units_metric" translatable="false">metric</string>
+    <string name="pref_units_imperial" translatable="false">imperial</string>
+
+    <string name="pref_default_sport_label">Default sport</string>
+    <string name="pref_default_sport_key" translatable="false">defaultSport</string>
+    <string name="pref_bike" translatable="false">bike</string>
+    <string name="pref_bike_road" translatable="false">bike_road</string>
+    <string name="pref_bike_mtb" translatable="false">bike_mtb</string>
+    <string name="pref_running" translatable="false">running</string>
+    <string name="pref_walking" translatable="false">walking</string>
+
+    <string name="pref_accuracy_key" translatable="false">accuracy</string>
+    <string name="pref_accuracy_default" translatable="false">20</string>
+    <string name="pref_accuracy_min" translatable="false">1</string>
+    <string name="pref_accuracy_max" translatable="false">50</string>
+    <string name="pref_accuracy_title">Accuracy</string>
+    <string name="pref_accuracy_dialog_message">Meters of accuracy to save GPS points</string>
+
+    <string name="pref_recording_activity_id" translatable="false">recording_activity_id</string>
+    <string name="pref_selected_sport_id" translatable="false">selected_sport_id</string>
+
+    <string name="pref_category_general_key" translatable="false">general_category</string>
+    <string name="pref_category_general_label">General</string>
+
+    <string name="pref_category_pebble_key" translatable="false">pebble_category</string>
+    <string name="pref_category_pebble_label">Pebble\'s watch</string>
+
+    <string name="pref_pebble_key" translatable="false">pebble</string>
+    <string name="pref_pebble_label">Pebble</string>
+    <string name="pref_pebble_summary">"Check this option for watching activity's data at watch"</string>
+
+    <!-- - - - - - - - - - - - - - - - - - -->
+    <!-- Used in the side menu             -->
+    <!-- - - - - - - - - - - - - - - - - - -->
+    <string name="action_new_activity">Record activity</string>
+    <string name="action_activities_list">Last Activities</string>
+    <string name="activities_menu_title">Activities</string>
+
+    <!-- - - - - - - - - - - - - - - - - - -->
+    <!-- Toast messeges                    -->
+    <!-- - - - - - - - - - - - - - - - - - -->
+    <string name="toast_location_permission_needed">
+        Location to tracking is needed
+    </string>
+    <string name="toast_activity_updated">
+        Your activity has been updated
+    </string>
+    <string name="toast_activity_not_updated">
+        Your activity has not been saved
+    </string>
+    <string name="permission_storage_explanation">
+        Storage access needed to load maps or you can enter in issues
+    </string>
+    <string name="error_pressure_network">
+        Error network retrieving pressure information
+    </string>
+    <string name="toast_date_invalid">
+        Date is not valid... in this date there are not activities
+    </string>
+
+    <!-- - - - - - - - - - - - - - - - - - -->
+    <!-- Alert messages                    -->
+    <!-- - - - - - - - - - - - - - - - - - -->
+    <string name="alert_gps_disabled_title">
+        Location is disabled
+    </string>
+    <string name="alert_gps_enabled_title">
+        Location is enabled
+    </string>
+    <string name="alert_gps_waiting_title">
+        Waiting GPS...
+    </string>
+    <string name="alert_gps_enable_location_message">
+        The location services are unabled. Do you want to enable them to register activities?
+    </string>
+    <string name="select_sport_to_record">
+        Select the sport
+    </string>
+    <string name="alert_ask_for_finish_activity">
+        Do you really want to finish this activity and save it?
+    </string>
+    <string name="alert_ask_for_remove_activity">
+        Do you really want to remove this activity?
+    </string>
+    <string name="alert_internet_enable_for_pressure_message">
+        Barometer can be used to calculate elevation but Internet connection is needed to get the
+        pressure in the sea level. Do you want to enable WiFi or Network connection? Otherwise GPS
+        altitude will be used.
+    </string>
+
+    <!-- - - - - - - - - - - - - - - - - - -->
+    <!-- Notification messages             -->
+    <!-- - - - - - - - - - - - - - - - - - -->
+    <string name="gps_service_message">
+        Recording an activity
+    </string>
+
+    <!-- - - - - - - - - - - - - - - - - - -->
+    <!-- Error messages                    -->
+    <!-- - - - - - - - - - - - - - - - - - -->
+    <string name="err_unknown_uri">
+        Unknown uri: %1$s
+    </string>
+    <string name="err_fail_insert_uri">
+        Failed to insert row into %1$s
+    </string>
+    <string name="err_fail_inserting_data">
+        Failed to insert row into database
+    </string>
+    <string name="err_no_sport_updated">
+        The activity sport has not been updated
+    </string>
+
+    <!-- - - - - - - - - - - - - - - - - - -->
+    <!-- Other messages                    -->
+    <!-- - - - - - - - - - - - - - - - - - -->
+    <string name="gps_signal_off">No GPS signal</string>
+    <string name="enable">Enable</string>
+    <string name="empty_activities">
+        There are not activities. You can create activities clicking on below button.
+    </string>
+    <string name="distance">Distance</string>
+    <string name="week_caption">Week</string>
+
+    <!-- - - - - - - - - - - - - - - - - - -->
+    <!-- Types of sports names             -->
+    <!-- - - - - - - - - - - - - - - - - - -->
+    <string name="sport_bike">Bike</string>
+    <string name="sport_bike_road">Bike</string>
+    <string name="sport_bike_mtb">MTB</string>
+    <string name="sport_running">Running</string>
+    <string name="sport_walking">Walking</string>
+
+    <!-- - - - - - - - - - - - - - - - - - -->
+    <!-- Stats texts                       -->
+    <!-- - - - - - - - - - - - - - - - - - -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_details">ActivityDetailsActivity</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="title_activity_stats">Stats</string>
+    <string name="tab_text_1">Summary</string>
+    <string name="tab_text_2">Months</string>
+    <string name="tab_text_3">Years</string>
+
+    <string name="arrow_left" translatable="false">\u003c</string>
+    <string name="arrow_right" translatable="false">\u003e</string>
+
+</resources>

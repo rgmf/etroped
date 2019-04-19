@@ -1,0 +1,68 @@
+/*
+ * Copyright (c) 2017-2019 Román Ginés Martínez Ferrández (rgmf@riseup.net)
+ *
+ * This file is part of Etroped (http://etroped.rgmf.es).
+ *
+ * Etroped is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * Etroped is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with Etroped.  If not, see <https://www.gnu.org/licenses/>.
+ */
+
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 26
+    buildToolsVersion '28.0.3'
+    defaultConfig {
+        applicationId "es.rgmf.etroped"
+        minSdkVersion 15
+        targetSdkVersion 26
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    androidTestImplementation('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+
+
+
+    implementation 'com.android.support:appcompat-v7:26.+'
+    implementation 'com.android.support:design:26.+'
+    implementation 'com.android.support.constraint:constraint-layout:1.0.2'
+    implementation 'com.android.support:preference-v7:26.+'
+    implementation 'com.android.support:support-v4:26.+'
+    implementation 'android.arch.lifecycle:runtime:1.0.0'
+    implementation 'android.arch.lifecycle:extensions:1.0.0-beta2'
+
+
+    implementation 'com.github.PhilJay:MPAndroidChart:v3.0.2'
+
+
+    implementation 'org.osmdroid:osmdroid-android:5.6.5'
+
+
+    implementation 'com.getpebble:pebblekit:4.0.1'
+
+
+    testImplementation 'junit:junit:4.12'
+}

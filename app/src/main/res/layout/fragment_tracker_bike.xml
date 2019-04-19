@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Copyright (c) 2017-2019 Román Ginés Martínez Ferrández (rgmf@riseup.net)
+
+    This file is part of Etroped (http://etroped.rgmf.es).
+
+    Etroped is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    Etroped is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with Foobar.  If not, see <https://www.gnu.org/licenses/>.
+-->
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:fillViewport="true">
+
+    <android.support.constraint.ConstraintLayout
+        android:paddingBottom="88dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tv_time_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/time_caption_label"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="8dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginRight="8dp"
+            app:layout_constraintRight_toRightOf="parent"
+            android:textAppearance="@style/TextAppearance.AppCompat.Caption" />
+
+        <TextView
+            android:id="@+id/tv_walking_time"
+            tools:text="@string/time_example"
+            android:text="@string/time_none"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginRight="8dp"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginTop="4dp"
+            android:textSize="@dimen/activity_data_xxlarge"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@+id/tv_time_label" />
+
+        <View
+            android:id="@+id/view1"
+            android:layout_width="wrap_content"
+            android:layout_height="0.1dp"
+            app:layout_constraintTop_toBottomOf="@+id/tv_walking_time"
+            android:layout_marginTop="50dp"
+            android:background="@color/colorDivider"
+            android:layout_marginRight="8dp"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginLeft="8dp"
+            app:layout_constraintLeft_toLeftOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_speed_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/speed_caption_label"
+            android:layout_marginLeft="8dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginRight="8dp"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginTop="4dp"
+            app:layout_constraintTop_toBottomOf="@+id/view1"
+            android:textAppearance="@style/TextAppearance.AppCompat.Caption" />
+
+        <TextView
+            android:id="@+id/tv_speed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="@string/current_speed_example"
+            android:text="@string/speed_none"
+            android:layout_marginTop="3dp"
+            android:textSize="@dimen/activity_data_xxlarge"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@+id/tv_speed_label"
+            android:layout_marginRight="8dp"
+            app:layout_constraintRight_toRightOf="@+id/tv_speed_label" />
+
+        <TextView
+            android:id="@+id/tv_speed_unit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:textAppearance="@style/MyTextAppearance.Small"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_speed_label"
+            app:layout_constraintLeft_toRightOf="@+id/tv_speed_label"
+            app:layout_constraintTop_toTopOf="@+id/tv_speed_label"
+            tools:text="@string/speed_unit_example" />
+
+        <TextView
+            android:id="@+id/tv_avg_speed_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/avg_speed_label"
+            app:layout_constraintLeft_toLeftOf="@+id/tv_avg_speed"
+            android:layout_marginRight="0dp"
+            app:layout_constraintRight_toRightOf="@+id/tv_avg_speed"
+            android:layout_marginBottom="0dp"
+            app:layout_constraintBottom_toTopOf="@+id/tv_avg_speed"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+        <TextView
+            android:id="@+id/tv_avg_speed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="@string/avg_speed_example"
+            android:text="@string/speed_none"
+            android:layout_marginRight="15dp"
+            android:textSize="@dimen/activity_data_medium"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_speed"
+            android:layout_marginBottom="8dp" />
+
+        <View
+            android:id="@+id/view2"
+            android:layout_width="wrap_content"
+            android:layout_height="0.1dp"
+            app:layout_constraintTop_toBottomOf="@+id/tv_avg_speed"
+            android:layout_marginTop="50dp"
+            android:background="@color/colorDivider"
+            android:layout_marginRight="8dp"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginLeft="8dp"
+            app:layout_constraintLeft_toLeftOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_distance_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/distance_caption_label"
+            android:layout_marginLeft="8dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginRight="8dp"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginTop="4dp"
+            app:layout_constraintTop_toBottomOf="@+id/view2"
+            android:textAppearance="@style/TextAppearance.AppCompat.Caption" />
+
+        <TextView
+            android:id="@+id/tv_distance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="@string/distance_example"
+            android:text="@string/distance_none"
+            android:layout_marginLeft="8dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginTop="2dp"
+            android:textSize="@dimen/activity_data_xxlarge"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@+id/tv_distance_label"
+            android:layout_marginRight="8dp"
+            app:layout_constraintRight_toRightOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_distance_unit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:textAppearance="@style/MyTextAppearance.Small"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_distance_label"
+            app:layout_constraintLeft_toRightOf="@+id/tv_distance_label"
+            app:layout_constraintTop_toTopOf="@+id/tv_distance_label"
+            tools:text="@string/distance_unit_example" />
+
+        <View
+            android:id="@+id/view3"
+            android:layout_width="wrap_content"
+            android:layout_height="0.1dp"
+            app:layout_constraintTop_toBottomOf="@+id/tv_distance"
+            android:layout_marginTop="50dp"
+            android:background="@color/colorDivider"
+            android:layout_marginRight="8dp"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginLeft="8dp"
+            app:layout_constraintLeft_toLeftOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_elevation_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/elevation_caption_label"
+            android:layout_marginLeft="8dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginRight="8dp"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginTop="4dp"
+            app:layout_constraintTop_toBottomOf="@+id/view3"
+            android:textAppearance="@style/TextAppearance.AppCompat.Caption" />
+
+        <TextView
+            android:id="@+id/tv_elevation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:text="@string/elevation_none"
+            android:textSize="@dimen/activity_data_xxlarge"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/tv_elevation_label"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_elevation_label"
+            tools:text="@string/elevation_example" />
+
+        <TextView
+            android:id="@+id/tv_elevation_unit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:textAppearance="@style/MyTextAppearance.Small"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_elevation_label"
+            app:layout_constraintLeft_toRightOf="@+id/tv_elevation_label"
+            app:layout_constraintTop_toTopOf="@+id/tv_elevation_label"
+            tools:text="@string/elevation_unit_example" />
+
+        <ImageView
+            android:id="@+id/iv_arrow_up"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_marginLeft="32dp"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_elevation"
+            app:layout_constraintStart_toEndOf="@+id/tv_elevation"
+            app:layout_constraintTop_toTopOf="@+id/tv_elevation"
+            app:srcCompat="@drawable/ic_vertical_align_top_black_24dp" />
+
+        <TextView
+            android:id="@+id/tv_elevation_gain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/activity_data_medium"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/iv_arrow_up"
+            app:layout_constraintStart_toEndOf="@+id/iv_arrow_up"
+            app:layout_constraintTop_toTopOf="@+id/iv_arrow_up"
+            tools:text="@string/elevation_example" />
+
+        <ImageView
+            android:id="@+id/iv_arrow_down"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_marginLeft="16dp"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_elevation_gain"
+            app:layout_constraintStart_toEndOf="@+id/tv_elevation_gain"
+            app:layout_constraintTop_toTopOf="@+id/tv_elevation_gain"
+            app:srcCompat="@drawable/ic_vertical_align_bottom_black_24dp" />
+
+        <TextView
+            android:id="@+id/tv_elevation_lost"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:textSize="@dimen/activity_data_medium"
+            android:textStyle="bold"
+            tools:text="@string/elevation_example"
+            app:layout_constraintBottom_toBottomOf="@+id/iv_arrow_down"
+            app:layout_constraintStart_toEndOf="@+id/iv_arrow_down"
+            app:layout_constraintTop_toTopOf="@+id/iv_arrow_down" />
+
+        <!--
+        <TextView
+            android:id="@+id/tv_nmea"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginBottom="64dp"
+            android:text="Aquí está el nmea que es muy, muy, muy largo... o eso se espera: que sea un String realment largo donde aparece gran cantidad de información."
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_elevation" />
+        -->
+
+    </android.support.constraint.ConstraintLayout>
+
+</ScrollView>

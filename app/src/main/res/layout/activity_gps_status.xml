@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Copyright (c) 2017-2019 Román Ginés Martínez Ferrández (rgmf@riseup.net)
+
+    This file is part of Etroped (http://etroped.rgmf.es).
+
+    Etroped is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    Etroped is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with Foobar.  If not, see <https://www.gnu.org/licenses/>.
+-->
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:fillViewport="true">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.5"/>
+
+        <TextView
+            android:id="@+id/tv_lat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="16dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            app:layout_constraintRight_toRightOf="@id/guideline"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="8.3849284534"
+            android:text="--"/>
+
+        <TextView
+            android:id="@+id/comma"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=", "
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            app:layout_constraintBottom_toBottomOf="@id/tv_lat"
+            app:layout_constraintStart_toEndOf="@id/tv_lat" />
+
+        <TextView
+            android:id="@+id/tv_lon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            app:layout_constraintBottom_toBottomOf="@+id/comma"
+            app:layout_constraintLeft_toLeftOf="@id/comma"
+            app:layout_constraintStart_toEndOf="@id/comma"
+            tools:text="-0.93849143"
+            android:text="--" />
+
+        <!-- Satellites -->
+        <TextView
+            android:id="@+id/tv_satellites_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="32dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            app:layout_constraintRight_toRightOf="@id/guideline"
+            app:layout_constraintTop_toBottomOf="@id/tv_lat"
+            android:text="@string/satellites_label" />
+
+        <TextView
+            android:id="@+id/tv_satellites"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            app:layout_constraintBottom_toBottomOf="@id/tv_satellites_label"
+            app:layout_constraintLeft_toLeftOf="@id/guideline"
+            tools:text="4"
+            android:text="--"/>
+
+        <!-- Accuracy -->
+        <TextView
+            android:id="@+id/tv_accuracy_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="8dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            app:layout_constraintRight_toRightOf="@id/guideline"
+            app:layout_constraintTop_toBottomOf="@+id/tv_satellites_label"
+            android:text="@string/accuracy_label" />
+
+        <TextView
+            android:id="@+id/tv_accuracy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            app:layout_constraintBottom_toBottomOf="@id/tv_accuracy_label"
+            app:layout_constraintLeft_toLeftOf="@id/guideline"
+            android:layout_marginLeft="8dp"
+            tools:text="10m"
+            android:text="--" />
+
+        <!-- Altitude -->
+        <TextView
+            android:id="@+id/tv_altitude_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="8dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            app:layout_constraintRight_toRightOf="@id/guideline"
+            app:layout_constraintTop_toBottomOf="@+id/tv_accuracy_label"
+            android:text="@string/gps_altitude_label" />
+
+        <TextView
+            android:id="@+id/tv_altitude"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            app:layout_constraintBottom_toBottomOf="@id/tv_altitude_label"
+            app:layout_constraintLeft_toLeftOf="@id/guideline"
+            android:layout_marginLeft="8dp"
+            tools:text="55m"
+            android:text="--" />
+
+        <!-- Barometer pressure -->
+        <TextView
+            android:id="@+id/tv_pressure_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="8dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            app:layout_constraintRight_toRightOf="@id/guideline"
+            app:layout_constraintTop_toBottomOf="@id/tv_altitude_label"
+            android:text="@string/pressure_label" />
+
+        <TextView
+            android:id="@+id/tv_pressure"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_pressure_label"
+            app:layout_constraintLeft_toLeftOf="@id/guideline"
+            android:layout_marginLeft="8dp"
+            tools:text="1014.04334"
+            android:text="--" />
+
+        <!-- Barometer altitude -->
+        <TextView
+            android:id="@+id/tv_barometer_altitude_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="8dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            app:layout_constraintRight_toRightOf="@id/guideline"
+            app:layout_constraintTop_toBottomOf="@id/tv_pressure_label"
+            android:text="@string/barometer_altitude_label" />
+
+        <TextView
+            android:id="@+id/tv_barometer_altitude"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_barometer_altitude_label"
+            app:layout_constraintLeft_toLeftOf="@id/guideline"
+            android:layout_marginLeft="8dp"
+            tools:text="12m"
+            android:text="--" />
+
+        <!-- Geo ID Height -->
+        <TextView
+            android:id="@+id/tv_geoidheight_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="8dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            app:layout_constraintRight_toRightOf="@id/guideline"
+            app:layout_constraintTop_toBottomOf="@id/tv_barometer_altitude_label"
+            android:text="@string/geoidheight_label" />
+
+        <TextView
+            android:id="@+id/tv_geoidheight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_geoidheight_label"
+            app:layout_constraintLeft_toLeftOf="@id/guideline"
+            android:layout_marginLeft="8dp"
+            tools:text="49m"
+            android:text="--" />
+
+        <!-- PDOP -->
+        <TextView
+            android:id="@+id/tv_pdop_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="8dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            app:layout_constraintRight_toRightOf="@id/guideline"
+            app:layout_constraintTop_toBottomOf="@id/tv_geoidheight_label"
+            android:text="@string/pdop_label" />
+
+        <TextView
+            android:id="@+id/tv_pdop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_pdop_label"
+            app:layout_constraintLeft_toLeftOf="@id/guideline"
+            android:layout_marginLeft="8dp"
+            tools:text="1"
+            android:text="--" />
+
+        <!-- VDOP -->
+        <TextView
+            android:id="@+id/tv_vdop_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="8dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            app:layout_constraintRight_toRightOf="@id/guideline"
+            app:layout_constraintTop_toBottomOf="@id/tv_pdop_label"
+            android:text="@string/vdop_label" />
+
+        <TextView
+            android:id="@+id/tv_vdop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_vdop_label"
+            app:layout_constraintLeft_toLeftOf="@id/guideline"
+            android:layout_marginLeft="8dp"
+            tools:text="1"
+            android:text="--" />
+
+        <!-- HDOP -->
+        <TextView
+            android:id="@+id/tv_hdop_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="8dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            app:layout_constraintRight_toRightOf="@id/guideline"
+            app:layout_constraintTop_toBottomOf="@id/tv_vdop_label"
+            android:text="@string/hdop_label" />
+
+        <TextView
+            android:id="@+id/tv_hdop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_hdop_label"
+            app:layout_constraintLeft_toLeftOf="@id/guideline"
+            android:layout_marginLeft="8dp"
+            tools:text="1"
+            android:text="--" />
+
+    </android.support.constraint.ConstraintLayout>
+
+</ScrollView>

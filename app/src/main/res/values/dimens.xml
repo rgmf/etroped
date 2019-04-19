@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Copyright (c) 2017-2019 Román Ginés Martínez Ferrández (rgmf@riseup.net)
+
+    This file is part of Etroped (http://etroped.rgmf.es).
+
+    Etroped is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    Etroped is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with Foobar.  If not, see <https://www.gnu.org/licenses/>.
+-->
+
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="nav_header_vertical_spacing">16dp</dimen>
+    <dimen name="nav_header_height">160dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+
+    <!-- Text sizes for activities data information -->
+    <dimen name="activity_data_xxlarge">48sp</dimen>
+    <dimen name="activity_data_xlarge">36sp</dimen>
+    <dimen name="activity_data_large">32sp</dimen>
+    <dimen name="activity_data_medium">28sp</dimen>
+    <dimen name="activity_data_small">20sp</dimen>
+    <dimen name="activity_data_xs">12sp</dimen>
+    <dimen name="activity_data_xxs">10sp</dimen>
+
+    <dimen name="caption_data_small">16sp</dimen>
+
+    <dimen name="appbar_padding_top">8dp</dimen>
+
+
+</resources>

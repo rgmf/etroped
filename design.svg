@@ -1,0 +1,419 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="210mm"
+   height="297mm"
+   viewBox="0 0 210 297"
+   version="1.1"
+   id="svg8"
+   inkscape:version="0.92.2 5c3e80d, 2017-08-06"
+   sodipodi:docname="design.svg">
+  <defs
+     id="defs2">
+    <marker
+       inkscape:isstock="true"
+       style="overflow:visible;"
+       id="marker1321"
+       refX="0.0"
+       refY="0.0"
+       orient="auto"
+       inkscape:stockid="Arrow2Mend">
+      <path
+         transform="scale(0.6) rotate(180) translate(0,0)"
+         d="M 8.7185878,4.0337352 L -2.2072895,0.016013256 L 8.7185884,-4.0017078 C 6.9730900,-1.6296469 6.9831476,1.6157441 8.7185878,4.0337352 z "
+         style="fill-rule:evenodd;stroke-width:0.625;stroke-linejoin:round;stroke:#000000;stroke-opacity:1;fill:#000000;fill-opacity:1"
+         id="path1319" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow2Mend"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="Arrow2Mend"
+       style="overflow:visible;"
+       inkscape:isstock="true"
+       inkscape:collect="always">
+      <path
+         id="path978"
+         style="fill-rule:evenodd;stroke-width:0.625;stroke-linejoin:round;stroke:#000000;stroke-opacity:1;fill:#000000;fill-opacity:1"
+         d="M 8.7185878,4.0337352 L -2.2072895,0.016013256 L 8.7185884,-4.0017078 C 6.9730900,-1.6296469 6.9831476,1.6157441 8.7185878,4.0337352 z "
+         transform="scale(0.6) rotate(180) translate(0,0)" />
+    </marker>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.061871845"
+     inkscape:cx="-2776.6172"
+     inkscape:cy="746.41141"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     showguides="true"
+     inkscape:window-width="1366"
+     inkscape:window-height="709"
+     inkscape:window-x="0"
+     inkscape:window-y="31"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Capa 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <g
+       id="g4682">
+      <rect
+         y="-872.57147"
+         x="-1783.2223"
+         height="1430.4265"
+         width="1120.3939"
+         id="rect4673"
+         style="opacity:1;fill:#eee6ff;fill-opacity:1;fill-rule:nonzero;stroke:#00000e;stroke-width:1.32291663;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+      <text
+         id="text4677"
+         y="-661.2002"
+         x="-1336.5383"
+         style="font-style:normal;font-weight:normal;font-size:223.42590332px;line-height:29.09191513px;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1.16367662"
+         xml:space="preserve"><tspan
+           style="stroke-width:1.16367662"
+           y="-661.2002"
+           x="-1336.5383"
+           id="tspan4675"
+           sodipodi:role="line">UI</tspan></text>
+    </g>
+    <rect
+       style="opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#00000e;stroke-width:2.13192606;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect4504"
+       width="523.07062"
+       height="480.07413"
+       x="-1486.4764"
+       y="-38.466263" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:57.78733444px;line-height:7.52439165px;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.30097568"
+       x="-1436.4659"
+       y="38.836628"
+       id="text4508"><tspan
+         sodipodi:role="line"
+         id="tspan4506"
+         x="-1436.4659"
+         y="38.836628"
+         style="stroke-width:0.30097568">TrackerActivity</tspan></text>
+    <rect
+       y="147.53053"
+       x="-1433.4901"
+       height="255.37167"
+       width="417.0979"
+       id="rect4515"
+       style="opacity:1;fill:#ffffee;fill-opacity:1;fill-rule:nonzero;stroke:#00000e;stroke-width:1.38849139;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+    <text
+       id="text4519"
+       y="188.60907"
+       x="-1418.373"
+       style="font-style:normal;font-weight:normal;font-size:30.75448036px;line-height:4.00448942px;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.16017959"
+       xml:space="preserve"><tspan
+         style="stroke-width:0.16017959"
+         y="188.60907"
+         x="-1418.373"
+         id="tspan4517"
+         sodipodi:role="line">AbstractTrackerFragment</tspan></text>
+    <g
+       id="g4548"
+       transform="matrix(1.6899193,0,0,1.6899193,1545.5495,-524.92774)">
+      <rect
+         y="-4.6409507"
+         x="-1796.1383"
+         height="255.46255"
+         width="311.44406"
+         id="rect4534"
+         style="opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#00000e;stroke-width:1.2000283;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+      <text
+         id="text4538"
+         y="36.483028"
+         x="-1777.0845"
+         style="font-style:normal;font-weight:normal;font-size:30.75448036px;line-height:4.00448942px;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.16017959"
+         xml:space="preserve"><tspan
+           style="stroke-width:0.16017959"
+           y="36.483028"
+           x="-1777.0845"
+           id="tspan4536"
+           sodipodi:role="line">GpsStatusActivity</tspan></text>
+    </g>
+    <rect
+       style="opacity:1;fill:#eeffff;fill-opacity:1;fill-rule:nonzero;stroke:#00000e;stroke-width:1.32291663;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect4554"
+       width="324.99973"
+       height="73.766388"
+       x="-1387.441"
+       y="215.75005" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:19.86901283px;line-height:2.587111px;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.10348444"
+       x="-1376.8838"
+       y="243.81529"
+       id="text4552"><tspan
+         sodipodi:role="line"
+         id="tspan4550"
+         x="-1376.8838"
+         y="243.81529"
+         style="stroke-width:0.10348444">interface IActivityWithWorkout</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:26.95526695px;line-height:3.50980043px;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.14039201"
+       x="-1450.6849"
+       y="104.85962"
+       id="text4558"><tspan
+         sodipodi:role="line"
+         id="tspan4556"
+         x="-1450.6849"
+         y="104.85962"
+         style="stroke-width:0.14039201">implements IActivityWithWorkout</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:21.83843422px;line-height:2.84354591px;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.11374184"
+       x="-1627.58"
+       y="302.89328"
+       id="text4562"
+       transform="scale(0.8617819,1.1603864)"><tspan
+         sodipodi:role="line"
+         x="-1627.58"
+         y="302.89328"
+         style="stroke-width:0.11374184"
+         id="tspan4568">Tiene varias clases de especialización</tspan></text>
+    <path
+       style="opacity:1;fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:10.46445179;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       d="M -319.01927,349.375 V 783.61622 H -1930.985 V 1082.6501 H 355.88068 V 783.61622 h -471.9634 V 349.375 Z"
+       id="rect940"
+       inkscape:connector-curvature="0" />
+    <g
+       id="g4589"
+       transform="matrix(1.3393393,0,0,1.3393393,369.68617,199.36177)">
+      <rect
+         style="opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#00000e;stroke-width:1.57196677;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+         id="rect4575"
+         width="389.69116"
+         height="350.34061"
+         x="-629.73334"
+         y="-206.42712" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-weight:normal;font-size:30.75448036px;line-height:4.00448942px;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.16017959"
+         x="-603.95483"
+         y="-165.48911"
+         id="text4579"><tspan
+           sodipodi:role="line"
+           id="tspan4577"
+           x="-603.95483"
+           y="-165.48911"
+           style="stroke-width:0.16017959">TrackerActivityService</tspan></text>
+    </g>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:12.40451908px;line-height:1.61517167px;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.06460688"
+       x="-303.2457"
+       y="424.73697"
+       id="text4595"><tspan
+         sodipodi:role="line"
+         id="tspan4593"
+         x="-303.2457"
+         y="424.73697"
+         style="stroke-width:0.06460688">ACTION_UPDATE_WORKOUT</tspan></text>
+    <text
+       id="text4599"
+       y="454.84384"
+       x="-285.61108"
+       style="font-style:normal;font-weight:normal;font-size:12.40451908px;line-height:1.61517167px;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.06460688"
+       xml:space="preserve"><tspan
+         style="stroke-width:0.06460688"
+         y="454.84384"
+         x="-285.61108"
+         id="tspan4597"
+         sodipodi:role="line">ACTION_WAITING_GPS</tspan></text>
+    <text
+       id="text4669"
+       y="-405.51407"
+       x="-1464.3009"
+       style="font-style:normal;font-weight:normal;font-size:23.83076477px;line-height:3.1029644px;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.12411856"
+       xml:space="preserve"><tspan
+         style="stroke-width:0.12411856"
+         y="-405.51407"
+         x="-1464.3009"
+         id="tspan4667"
+         sodipodi:role="line">implements ILocationManagerForStatus</tspan></text>
+    <g
+       id="g938">
+      <g
+         transform="translate(-9.0714286,-69.547619)"
+         id="g4665">
+        <g
+           id="g4656"
+           transform="matrix(1.3393393,0,0,1.3393393,161.11596,185.75154)">
+          <rect
+             y="-546.60583"
+             x="-474.00714"
+             height="350.34061"
+             width="389.69116"
+             id="rect4642"
+             style="opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#00000e;stroke-width:1.57196677;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+          <text
+             id="text4646"
+             y="-505.66785"
+             x="-414.80865"
+             style="font-style:normal;font-weight:normal;font-size:30.75448036px;line-height:4.00448942px;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.16017959"
+             xml:space="preserve"><tspan
+               style="stroke-width:0.16017959"
+               y="-505.66785"
+               x="-414.80865"
+               id="tspan4644"
+               sodipodi:role="line">GpsStatusService</tspan></text>
+        </g>
+        <rect
+           y="-434.42593"
+           x="-446.12842"
+           height="105.92969"
+           width="466.70468"
+           id="rect4632"
+           style="opacity:1;fill:#eeffff;fill-opacity:1;fill-rule:nonzero;stroke:#00000e;stroke-width:1.89972878;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+        <text
+           id="text4636"
+           y="-382.57947"
+           x="-430.24042"
+           style="font-style:normal;font-weight:normal;font-size:23.51959229px;line-height:3.06244636px;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.12249786"
+           xml:space="preserve"><tspan
+             style="stroke-width:0.12249786"
+             y="-382.57947"
+             x="-430.24042"
+             id="tspan4634"
+             sodipodi:role="line">interface ILocationManagerForStatus</tspan></text>
+      </g>
+      <text
+         id="text863"
+         y="-301.50046"
+         x="-430.59467"
+         style="font-style:normal;font-weight:normal;font-size:13.40884304px;line-height:1.74594307px;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.06983772"
+         xml:space="preserve"><tspan
+           id="tspan894"
+           style="line-height:17.62005806px;stroke-width:0.06983772"
+           y="-301.50046"
+           x="-430.59467"
+           sodipodi:role="line"><tspan
+             style="line-height:17.62005806px;stroke-width:0.06983772"
+             id="tspan871"
+             dy="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1.5890011"><tspan
+               style="line-height:17.62005806px;stroke-width:0.06983772"
+               id="tspan869"
+               dy="1.5890011">Desde esta clase se puede acceder a información del GPS</tspan></tspan></tspan><tspan
+           id="tspan902"
+           style="line-height:17.62005806px;stroke-width:0.06983772"
+           y="-283.8804"
+           x="-430.59467"
+           sodipodi:role="line">tal como:</tspan><tspan
+           id="tspan904"
+           style="line-height:17.62005806px;stroke-width:0.06983772"
+           y="-266.26035"
+           x="-430.59467"
+           sodipodi:role="line">- Información NMEA.</tspan><tspan
+           id="tspan906"
+           style="line-height:17.62005806px;stroke-width:0.06983772"
+           y="-248.64029"
+           x="-430.59467"
+           sodipodi:role="line">- Satélites visibles.</tspan><tspan
+           id="tspan908"
+           style="line-height:17.62005806px;stroke-width:0.06983772"
+           y="-231.02023"
+           x="-430.59467"
+           sodipodi:role="line">- Satélites usados para fijar la posición.</tspan><tspan
+           id="tspan910"
+           style="line-height:17.62005806px;stroke-width:0.06983772"
+           y="-213.40018"
+           x="-430.59467"
+           sodipodi:role="line">Para utilizar esta clase es necesario implementar la interfaz</tspan><tspan
+           id="tspan912"
+           style="line-height:17.62005806px;stroke-width:0.06983772"
+           y="-195.78011"
+           x="-430.59467"
+           sodipodi:role="line">ILocationManagerForStatus para pasar el LocationManager.</tspan><tspan
+           id="tspan914"
+           style="line-height:17.62005806px;stroke-width:0.06983772"
+           y="-178.16005"
+           x="-430.59467"
+           sodipodi:role="line">Después se emplea el método addStatusInformation para que</tspan><tspan
+           id="tspan916"
+           style="line-height:17.62005806px;stroke-width:0.06983772"
+           y="-160.53999"
+           x="-430.59467"
+           sodipodi:role="line">añada la información en el Location dado.</tspan></text>
+    </g>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1.32291667;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
+       d="m -228.29762,-399.98808 v 77.10712 H -1266.9762 v -74.08333"
+       id="path4671"
+       inkscape:connector-curvature="0" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:50.79999924px;line-height:6.61458302px;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="-916.77216"
+       y="1051.7692"
+       id="text947"><tspan
+         sodipodi:role="line"
+         id="tspan945"
+         x="-916.77216"
+         y="1051.7692"
+         style="stroke-width:0.26458332">Broadcast</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:14.41368008;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#Arrow2Mend)"
+       d="M -1413.3212,778.08512 V 464.17614"
+       id="path949"
+       inkscape:connector-curvature="0" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path1317"
+       d="M -1037.6105,778.08512 V 464.17614"
+       style="fill:none;stroke:#000000;stroke-width:14.41368008;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker1321)" />
+    <text
+       id="text1775"
+       y="682.98083"
+       x="-984.43671"
+       style="font-style:normal;font-weight:normal;font-size:31.93340111px;line-height:4.15799522px;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.16631983"
+       xml:space="preserve"><tspan
+         style="stroke-width:0.16631983"
+         y="682.98083"
+         x="-984.43671"
+         id="tspan1773"
+         sodipodi:role="line">ACTION_UPDATE_WORKOUT</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:31.93340111px;line-height:4.15799522px;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.16631983"
+       x="-1832.7565"
+       y="694.43402"
+       id="text1779"><tspan
+         sodipodi:role="line"
+         id="tspan1777"
+         x="-1832.7565"
+         y="694.43402"
+         style="stroke-width:0.16631983">ACTION_WAITING_GPS</tspan></text>
+  </g>
+</svg>

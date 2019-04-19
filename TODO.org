@@ -1,0 +1,167 @@
+* Roadmap
+** DONE Eliminar actividades de la lista de actividades
+** DONE Ver detalles de las actividades
+*** DONE Título de esta Activity
+    Poner de título la fecha, por ejemplo: lun, 10/07/2017.
+*** DONE Botón de volver
+    No aparece el botón de volver en esta Activity. Hay que incluirlo.
+*** DONE Eliminar
+    Desde aquí hay un menú con un item llamado Eliminar. Hay que implementarlo.
+*** DONE Imágenes en las pestañas
+    En vez de los títulos hay que colocar imágenes en las pestañas.
+*** DONE Editar actividades
+    Se edita el nombre, el comentario y el tipo de actividad.
+*** DONE Pestaña review
+    - Para ciclismo no sé muy bien qué poner aquí. Podría poner intervalos de 5
+      km por ejemplo, aunque quiero pensarlo bien.
+    - Para running está claro que tengo que poner los parciales de cada km.
+    - Para walking no sé muy bien qué poner aquí. Lo mismo que para running.
+*** DONE Pestaña graph
+    Puedo incluir los siguientes gráficos:
+    - Pérfil, Altitud (para todas las actividades).
+    - Velocidad, para todas las actividades (para ciclismo).
+    - Ritmo (para running y walking).
+** DONE Crear un icono de la aplicación
+** DONE Meterle mano al menú lateral
+** DONE Mapa mapsfoge (al final he metido osmdroid)
+   Información:
+   http://wiki.openstreetmap.org/wiki/ES:Mapsforge
+   https://github.com/mapsforge/mapsforge
+** DONE Lista de actividades vacía
+   Hay que crear alguna imagen (splash) indicando que no hay actividades. Un
+   layout.
+** DONE Portrait en las actividades y fragments
+   Excepto en alguna actividad concreta, los layout tienen que estar en modo
+   portrait y nunca landscape. No debería girar la pantalla.
+** DONE Actividad para ver el mapa a lo grande
+   Cuando se haga clic en el mapa se debe ver a lo grande.
+** DONE Mejorar la información de altura
+   La altura nos la da el GPS pero es la altura sobre el elipsoide y no sobre el
+   nivel del mar con lo que es muy imprecisa.
+   Si el móvil tiene barómetro se puede usar el barómetro y el web service
+   openweathermap que permite recoger la presión a nivel del mar en una
+   localidad determinada.
+   La opción de convertir la altura sobre el elipsoide a nivel del mar la estuve
+   viendo pero se trata de un algoritmo muy complejo al que debería dar
+   bastantes vueltas.
+** DONE Preguntar al usuario si falta algún permiso por otorgar
+   He tenido problemas con el permiso para leer y escribir del/en almacenamiento
+   externo porque no lo tenía pero tampoco le preguntaba al usuario.
+** DONE Mejorar desnivel positivo y negativo
+   Ahora mismo se hace mal.
+** DONE Estado GPS y altitud
+   Hasta que el estado del GPS no sea bueno ni se haya obtenido la distancia del
+   barómetro no debería comenzar la actividad.
+** DONE Mejorar gráficos
+   Resulta que cuando la altura varía poco en el gráfico se ven cambios muy
+   exagerados porque el eje y va de 0,1 en 0,1, por ejemplo. He encontrado la
+   solución. Ver el código porque solo falta mejorarlo en función de los datos
+   obtenidos. 
+** DONE Cambiar ElevationTask
+   Para unificarlo con ElevationWorkout y que se haga todo lo relacionado con la
+   altitud por ahí.
+** DONE Botones al grabar actividad
+   Habría que ver cómo crear mejores botones. Quizás saliendo de los button
+   float.
+** DONE Precisión del GPS en Preferencias
+   Dejamos que sea el usuario quien decida a partir de qué precisión quiere
+   guardar los puntos del GPS.
+** DONE Servicio "loading"
+   HE CAMBIADO EL CÓDIGO:
+   TrackerActivityService.addServiceClient(mClient);
+
+   QUE ESTABA EN onServiceConnected Y LO HE PUESTO EN EL CONSTRUCTOR.
+
+   El servicio ejecuta una posible tarea larga (doInBackground) en background y
+   debería hacer algo para que se informe a los clientes que el servicio está
+   ocupado, todavía no está listo, de manera que en el cliente aparezca un
+   "loading" para que no se realice todavía nada de nada.
+
+   El problema es que lo he estado intentando pero cuando se ejecuta el
+   doInBackground puede que el cliente no esté en el ArrayList de clientes
+   todavía así que no se puede enviar el onServiceLoading que, en principio, he
+   añadido en el Interface correspondiente
+** DONE Pebble
+   Añadir la parte que permite ver los tiempos y la distancia en el reloj.
+** DONE Mejorar listado de actividades - roadmap1
+   Mejoramos el listado de actividades de la pantalla principal. Más datos, más
+   amplio para que no sea un listado sin más.
+   Añadir, como primer elemento las estadísticas de la semana en curso, por ejemplo.
+** Cargar poco a poco la lista de actividades - roadmap2
+   En el RecyclerView hay que ir llenando sobre el scroll la lista. Ejemplo:
+   https://medium.com/@programmerasi/how-to-implement-load-more-in-recyclerview-3c6358297f4
+** TODO Últimas actividades / Todas las actividades
+   En el listado principal que aparezcan las actividades del último mes siempre y cuando aparezcan un mínimo de 20.
+   Crear otra sección en la que se pueden buscar actividades por mes (con un calendario para seleccionar el mes y el año).
+** TODO Actividad con estadísticas - roadmap4
+   Hay que pensarlo pero hay que desarrollar la parte en la cual poder ver las estadísticas semanales/mensuales/anuales/entre dos fechas a seleccionar:
+   - Las actividades.
+   - Los totales.
+   - Las medias.
+   - Etc.
+** TODO Añadir en las preferencias el número de segundos entre localizaciones
+** TODO Añadir el modo de selección múltiple
+   Cuando se haga una pulsación larga sobre un elemento del ActivitiesFragment
+   se selecciona el elemento de la lista y se entra en modo selcción para
+   continuar seleccionando elementos. Además, debería aparecer el botón del cubo
+   de la basura en la barra de estado para eliminar.
+* Bugs
+** TODO Altitud empieza por 0
+   A veces la primera altitud empieza por 0 y pasa a la altitud
+   correspondiente. Hay que ver qué pasa ahí porque si no hay altitud debería
+   guardarse en la BD el varlor de NONE.
+** DONE Actividad guardada para recuperar
+   Lo que se me ocurre que puedo hacer es en el onCreate del TrackerActivity
+   decidir si la actividad que se hay guardada debemos cargarla o no, dejándola
+   en el SharedPreferences o eliminándola para que luego en el Workout no se
+   cargue. Además, será aquí donde se establezca el valor para el
+   mSelectedSportId eliminando toda esa lógica del método
+   initializeSportButton. Y hasta que no se compruebe esto no se sigue cargando
+   el TrackerActivity (que aparezca el loading). De esa manera eliminamos
+   también el problema que podía surgir al cargar los fragment.
+
+   Esto hay que mejorarlo. Por ejemplo, si no se ha guardado ningún punto
+   debería desecharse. Y ver por qué a veces la actividad empiezar por el
+   segundo 30, 35, 57, o lo que sea. ¿Es porque hay una actividad sin guardar?
+** DONE Sigue apareciendo en algunas situaciones "--" en las vistas
+   Hay veces que se pierde el último Workout de TrackerActivity y, entonces, al
+   regresar, se vuelve a crear la vista y aparecen los valores por defecto que
+   son "--" normalmente.
+** DONE Cuando se pausa la actividad, al reanudar se cuenta le tiempo pausado
+   EN TEORÍA YA LO HE SOLUCIONADO. HE HECHO CAMBIOS EN Workout.java Y EN
+   SpeedWorkout.java POR SI NO FUERA Y TUVIERA QUE DESHACER.
+
+   Por ejemplo, pauso una actividad con un ritmo en running y cuando le vuelvo a
+   dar al play el tiempo que ha estado pausado se toma en consideración para el
+   ritmo que se lleva (imagino que en bici pasará lo mismo).
+** DONE Lista de parciales (1km)
+   Se colorea de azul de tanto en tanto como si del encabezado se tratara.
+** DONE La altitude es muy mejorable
+   Ahora mismo no te puedes fiar de la información de la altitud.
+** DONE La notificación debería aparecer al hacer play y desaparecer al cerrar
+   La notificación debería aparecer una vez el usuario le da al play por pimera
+   vez y deberá desaparecer (eliminarse) cuando se acabe la actividad.
+** DONE Problema botones cuando se detiene el GPS y se cierra la aplicación
+   Al abrirse de nuevo se lee le mensaje de GPS desactivado pero aparecen los
+   botones stop y pause cuando debería aparecer el botón de record.
+   Es debido a que cuando se arranca la aplicación cuando el servicio está activo
+   directamente aparece el pause ya que se manda la orden de play. Es un caso que
+   se me ha escapado.
+** DONE Problema con las estadísticas (parciales 1 km)
+   Cuando se graba una actividad en la que se pulsa el pause y luego se continua
+   varios kms más allá, en las estadísticas se cuentan estas distancias.
+* Mejoras
+** DONE Actividad para ver el mapa a lo grande
+   ME FALTA CREAR UNA CLASE UTILS PARA MEJORAR LA REUTILIZACIÓN DEL CÓDIGO
+   RELACIONADO CON LOS MAPAS.
+** DONE Corregir altura del GPS
+   Ahora mismo, si el móvil no tiene barómetro se toma la altura directamente
+   desde el gps (altura sobre el elipsoide) lo que es bastante impreciso. Se
+   puede corregir. Mirar los marcadores que dejé para ello en el apartado gps.
+** TODO Cambiar de Broadcast a EventBus (planteárselo)
+   DE MOMENTO ESTOY USANDO INTERFACES PARA NO TENER QUE USAR BROADCAST YA QUE
+   CREO QUE ESTE ES EL PROBLEMA QUE LLEVABA A QUE A VECES EL MAINTHREAD SE
+   QUEDARA COLGADO Y SE REFRESCARAN LOS DATOS DE MENERA LENTA.
+   La librería eventbus parece más apropiada para tener a todos los componentes
+   (Activities, Fragments, Services...) conectados entre sí. Hay que echarle un
+   vistazo y ver si merece la pena.
