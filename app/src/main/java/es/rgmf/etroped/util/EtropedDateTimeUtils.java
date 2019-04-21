@@ -427,17 +427,18 @@ public final class EtropedDateTimeUtils {
 
     /**
      * Return the n last mondays from from date.
+     * @param calendarDay A day from Calendar like Calendar.MONDAY.
      * @param n Number of mondays to get.
      * @param from Datetime in milliseconds to begin.
      * @return the last n mondays.
      */
-    public static long[] getLastMondays(int n, long from) {
+    public static long[] getLastDays(int calendarDay, int n, long from) {
         long[] res = new long[n];
         Calendar cal = Calendar.getInstance();
         cal.setTimeInMillis(from);
 
         for (int i = 0; i < n; i++) {
-            while (cal.get(Calendar.DAY_OF_WEEK) != Calendar.MONDAY) {
+            while (cal.get(Calendar.DAY_OF_WEEK) != calendarDay) {
                 cal.add(Calendar.DATE, -1);
             }
             res[i] = cal.getTimeInMillis();
@@ -445,5 +446,22 @@ public final class EtropedDateTimeUtils {
         }
 
         return res;
+    }
+
+    /**
+     * Return a date part from a milliseconds datetime.
+     *
+     * @param millis
+     * @return
+     */
+    public static long getDatePart(long millis) {
+        Calendar cal =Calendar.getInstance();
+        cal.setTimeInMillis(millis);
+        cal.set(Calendar.HOUR_OF_DAY, 0);
+        cal.set(Calendar.MINUTE, 0);
+        cal.set(Calendar.SECOND, 0);
+        cal.set(Calendar.MILLISECOND, 0);
+
+        return cal.getTimeInMillis();
     }
 }

@@ -231,12 +231,15 @@ public class ActivitiesFragment extends Fragment implements
 
                     // It shows all activities for last 5 weeks.
                     // ... monday 5 weeks ago.
-                    long[] firstDays = EtropedDateTimeUtils.getLastMondays(5, EtropedDateTimeUtils.getFirstDayOfThisWeek());
+                    long[] firstDays = EtropedDateTimeUtils.getLastDays(Calendar.MONDAY, 5, EtropedDateTimeUtils.getFirstDayOfThisWeek());
+                    long[] lastDays = EtropedDateTimeUtils.getLastDays(Calendar.SUNDAY, 5, EtropedDateTimeUtils.getFirstDayOfThisWeek() + sevenDaysMillis);
+                    /*
                     long[] lastDays = new long[5];
                     // ... and sundays 5 weeks ago.
                     for (int i = 0; i < 5; i++) {
                         lastDays[i] = firstDays[i] + (sevenDaysMillis - 1L);
                     }
+                    */
 
                     // Get all activities from 5 weeks ago.
                     Cursor cursor = getContext().getContentResolver().query(
@@ -263,7 +266,8 @@ public class ActivitiesFragment extends Fragment implements
                             ViewTypeActivity viewTypeActivity = ViewTypeActivity.newInstance(getActivity());
                             viewTypeActivity.setActivity(activityEntity);
 
-                            if (activityEntity.getStartTime() >= firstDays[index] && activityEntity.getEndTime() <= lastDays[index]) {
+                            if (EtropedDateTimeUtils.getDatePart(activityEntity.getStartTime()) >= firstDays[index] &&
+                                    EtropedDateTimeUtils.getDatePart(activityEntity.getEndTime()) <= lastDays[index]) {
                                 weekSummary.add(activityEntity);
                             }
                             else {
@@ -274,6 +278,11 @@ public class ActivitiesFragment extends Fragment implements
                                 weekSummary.setStartDate(firstDays[index]);
                                 weekSummary.setEndDate(lastDays[index]);
                                 viewList.add(weekSummary);
+
+                                if (EtropedDateTimeUtils.getDatePart(activityEntity.getStartTime()) >= firstDays[index] &&
+                                        EtropedDateTimeUtils.getDatePart(activityEntity.getEndTime()) <= lastDays[index]) {
+                                    weekSummary.add(activityEntity);
+                                }
                             }
 
                             viewList.add(viewTypeActivity);
