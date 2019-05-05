@@ -24,7 +24,6 @@ import android.content.res.ColorStateList;
 import android.support.v4.content.ContextCompat;
 import android.support.v4.widget.ImageViewCompat;
 import android.support.v7.widget.RecyclerView;
-import android.text.format.DateUtils;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -90,6 +89,7 @@ public class ActivitiesAdapter extends
 
     @Override
     public void onBindViewHolder(RecyclerView.ViewHolder holder, int position) {
+
         switch (holder.getItemViewType()) {
             case ViewTypeAbstract.TYPE_WEEK_SUMMARY:
                 WeekSummaryViewHolder weekSummaryViewHolder = (WeekSummaryViewHolder) holder;
@@ -189,7 +189,6 @@ public class ActivitiesAdapter extends
                         )
                 );
                 break;
-
         }
     }
 
@@ -218,13 +217,13 @@ public class ActivitiesAdapter extends
         if (mViewList == data)
             return null;
 
-        ActivityViewList temp = mViewList;
+        //ActivityViewList temp = mViewList;
         this.mViewList = data;
 
         if (data != null)
             this.notifyDataSetChanged();
 
-        return temp;
+        return data;
     }
 
     /**
