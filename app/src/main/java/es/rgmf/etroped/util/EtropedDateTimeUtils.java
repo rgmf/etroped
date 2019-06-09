@@ -55,7 +55,8 @@ public final class EtropedDateTimeUtils {
     public static String formatTime(Context context, long milliseconds, int sport) {
         int seconds = (int) (milliseconds / 1000) % 60 ;
         int minutes = (int) ((milliseconds / (1000*60)) % 60);
-        int hours   = (int) ((milliseconds / (1000*60*60)) % 24);
+        //int hours   = (int) ((milliseconds / (1000*60*60)) % 24);
+        int hours   = (int) (milliseconds / (1000*60*60));
 
         if (sport == EtropedContract.SPORT_BIKE) {
             if (hours > 0)
@@ -89,7 +90,8 @@ public final class EtropedDateTimeUtils {
     public static String formatTimeOnLive(Context context, long milliseconds) {
         int seconds = (int) (milliseconds / 1000) % 60 ;
         int minutes = (int) ((milliseconds / (1000*60)) % 60);
-        int hours   = (int) ((milliseconds / (1000*60*60)) % 24);
+        //int hours   = (int) ((milliseconds / (1000*60*60)) % 24);
+        int hours   = (int) (milliseconds / (1000*60*60));
 
         return String.format(context.getString(R.string.hours_minutes_seconds_format_onlive),
                 hours, minutes, seconds);
@@ -104,7 +106,8 @@ public final class EtropedDateTimeUtils {
      */
     public static String formatTimeHoursMinutes(Context context, long milliseconds) {
         int minutes = (int) ((milliseconds / (1000*60)) % 60);
-        int hours   = (int) ((milliseconds / (1000*60*60)) % 24);
+        //int hours   = (int) ((milliseconds / (1000*60*60)) % 24);
+        int hours   = (int) (milliseconds / (1000*60*60));
 
         if (hours > 0)
             return String.format(context.getString(R.string.hours_minutes_v2_format),
