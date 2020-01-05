@@ -1,0 +1,10 @@
+Etroped es una aplicación de GPS y seguimiento para usar en tus actividades deportivas: ciclismo, running, treking... Además, es una aplicación que respeta tu privacidad ya que todo queda almacenado en tu dispositivo. Solo descarga, instala y usa, sin más.
+
+Funciones:
+* Muestra en vivo los datos de tu actividad: velocidad, velocidad media, altitud, tiempo, paso...
+* Muestra estadísticas de las últimas 5 semanas.
+* Detalles de las actividades con estadísticas.
+* Estadísticas generales: resumen, mensual y anual.
+* Visualiza tus actividades sobre mapas OpenStreetMap.
+* Gráficas que representan estadísiticas y datos: altitud, velocidad, paso...
+* Integración con relojes Pebble (experimental). Solo probado en Pebble 2.

@@ -1,0 +1,10 @@
+Etroped is a GPS-tracking app for tracking your bike, running and trekking activities.
+
+Features:
+* Display live tracking data: speed, average speed, altitude information from GPS, time, pace...
+* Display last 5 weeks stats.
+* Activities details with stats.
+* General stats: summary, monthly and yearly.
+* OpenStreetMap track visualization.
+* Charts representing stats and data: altitude, speed, pace...
+* Experimental Pebble integration (only tested on Pebble 2).
